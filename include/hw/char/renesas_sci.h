@@ -33,16 +33,16 @@ typedef struct {
     CharBackend chr;
     qemu_irq irq[SCI_NR_IRQ];
 
-    uint8_t smr;
-    uint8_t brr;
-    uint8_t scr;
+    uint16_t smr;
+    uint16_t brr;
+    uint16_t scr;
     uint8_t tdr;
-    uint8_t ssr;
+    uint16_t ssr;
     uint8_t rdr;
-    uint8_t scmr;
-    uint8_t semr;
+    uint16_t scmr;
+    uint16_t semr;
 
-    uint8_t read_ssr;
+    uint16_t read_ssr;
     int64_t trtime;
     int64_t rx_next;
     uint64_t input_freq;
