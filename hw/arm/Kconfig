@@ -317,6 +317,12 @@ config RASPI
     select SDHCI
     select USB_DWC2
 
+config RENESAS_RCAR3_ARM
+    bool
+    select ARM_GIC
+    select RENESAS_RCAR3
+    select RENESAS_SCI
+
 config STM32F205_SOC
     bool
     select ARM_V7M

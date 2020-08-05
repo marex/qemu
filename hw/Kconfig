@@ -66,6 +66,10 @@ source unicore32/Kconfig
 source xtensa/Kconfig
 
 # Symbols used by multiple targets
+config RENESAS_RCAR3
+    bool
+    select REGISTER
+
 config TEST_DEVICES
     bool
 
